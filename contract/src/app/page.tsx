@@ -46,6 +46,7 @@ function changeTab(clickedButton: any) {
                 <button type="button" className={`text-[#575c66] font-bold hover:bg-gray-200 py-2 px-4 rounded-md ${selected === 'Governor' ? ' bg-[#4e5de4] hover:bg-blue-600 text-[#f5f5f5]' : ''}`} onClick={(e) => changeTab(e.target)}>Governor</button>
 
                 <button type="button" className={`text-[#575c66] font-bold hover:bg-gray-200 py-2 px-4 rounded-md ${selected === 'Custom' ? ' bg-[#4e5de4] hover:bg-blue-600 text-[#f5f5f5]' : ''}`} onClick={(e) => changeTab(e.target)}>Custom</button>
+                
               </div>
           </div>
           <div className="action flex flex-row gap-2 shrink-0">  
@@ -58,7 +59,7 @@ function changeTab(clickedButton: any) {
         <div className="flex flex-row gap-4 grow">
             <div className="w-64 flex flex-col shrink-0 justify-between overflow-auto  h-[calc(100vh-84px)] rounded shadow-md">
               {selected === 'ERC20' &&  'ERC20'}
-              {selected === 'ERC721' &&  'ERC721'}
+              {selected === 'ERC721' &&  <ERC721/>}
               {selected === 'ERC1155' &&  'ERC1155'}
               {selected === 'Custom' &&  'Custom'}
               {selected === 'Governor' &&  'Governor'}

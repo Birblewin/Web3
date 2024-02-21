@@ -1,4 +1,15 @@
+import { useState } from "react";
+
+
 const ERC721 = ()=>{
+    const [isAutoIncrementIds, setIsAutoIncrementIds] = useState(false);
+    const [isMintable, setIsMintable] = useState(false);
+
+    const handleAutoIncrementIdsChange = () => {
+        setIsAutoIncrementIds(!isAutoIncrementIds);
+        setIsMintable(!isMintable); // Update the state of Mintable checkbox
+    };
+
     return(
         <div className="p-4">
             <div>
@@ -19,9 +30,9 @@ const ERC721 = ()=>{
                 </div>
                 <div className="flex flex-col p-[0.5rem]">
                     <label htmlFor="uri" className="text-[#333333] text-[0.875rem]">
-                        Premint
+                        Base URI
                     </label>
-                    <input  id="uri" type="text" placeholder="0" className="border border-1 border-[#333333] rounded-[6px] p-1  text-black"/>
+                    <input  id="uri" type="text" placeholder="https://..." className="border border-1 border-[#333333] rounded-[6px] p-1  text-black"/>
                 </div>
             </div>
             <hr className="my-4"></hr>
@@ -29,12 +40,29 @@ const ERC721 = ()=>{
                 <h1 className="text-[#818998] font-semibold text-xs">FEATURES</h1>
                 <div className="m-[0.5rem] flex items-center">
                     <input
-                    title="Mintable"
+                        title="Mintable"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 rounded"
+                        checked={isAutoIncrementIds}
+                        onChange={handleAutoIncrementIdsChange}
+                        onClick={() => setIsAutoIncrementIds(!isAutoIncrementIds)}
                         
                     />
                     <label className="ml-[0.5rem] text-[#333333] ">Mintable</label>
+                </div>
+                <div className="m-[0.5rem] flex items-center">
+                    
+                    <label className="ml-[0.5rem] text-[#333333] flex items-center">
+                        <span className="text-[#d8dbe2]">└</span>
+                        <input
+                        title="Auto increment Ids"
+                        type="checkbox"
+                        className="form-checkbox h-3 w-3 rounded"
+                        onClick={() => setIsAutoIncrementIds(!isAutoIncrementIds)}
+                       
+                        
+                    />
+                        Auto increment Ids</label>
                 </div>
                 <div className="m-[0.5rem] flex items-center">
                     <input
@@ -65,12 +93,21 @@ const ERC721 = ()=>{
                 </div>
                 <div className="m-[0.5rem] mb-0 flex items-center">
                     <input
-                        title="Flash Minting"
+                        title="enumerable"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 text-indigo-600 rounded"
                         
                     />
-                    <label className="ml-[0.5rem] text-[#333333] ">Flash Minting</label>
+                    <label className="ml-[0.5rem] text-[#333333] ">Enumerable</label>
+                </div>
+                <div className="m-[0.5rem] mb-0 flex items-center">
+                    <input
+                        title="URI Storage"
+                        type="checkbox"
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
+                        
+                    />
+                    <label className="ml-[0.5rem] text-[#333333] ">URI Storage</label>
                 </div>
                 
             </div>
@@ -98,22 +135,22 @@ const ERC721 = ()=>{
                 <div className="m-[0.5rem]  flex items-center">
                     
                     <input
-                        title="Roles Managed"
+                        title="Roles"
                         type="radio"
                         className="radio h-3 w-3 "
                         
                     />
-                    <label className="ml-2 text-[#333333] ">Roles Managed</label>
+                    <label className="ml-2 text-[#333333] ">Roles</label>
                 </div>
                 <div className=" flex items-center m-[0.5rem]  mb-0">
                     
                     <input
-                        title="mintable"
+                        title="Managed"
                         type="radio"
                         className="form-checkbox h-3 w-3"
                         
                     />
-                    <label className="ml-2 text-[#333333] ">Mintable</label>
+                    <label className="ml-2 text-[#333333] ">Managed</label>
                 </div>
                 
             </div>
