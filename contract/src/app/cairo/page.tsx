@@ -9,7 +9,8 @@ import Download from "@/components/cairoDownloadBtn";
 
 import CopyBtn from "@/components/CopyBtn";
 import ERC721 from "@/components/ERC721";
-
+import ERC20 from "@/components/erc20";
+import Governor from "@/components/governor";
 
 export default function Cairo() {
 
