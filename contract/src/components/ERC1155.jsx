@@ -26,120 +26,158 @@ export default function ERC1155() {
             <hr className="my-4"></hr>
             <div>
                 <h1 className="text-[#818998] font-semibold text-xs">FEATURES</h1>
-                <div className="mt-2 flex items-center">
+                <div className="m-[0.5rem] flex items-center justify-between">
+
+                    <div className=" flex items-center">
                     <input
                         title="Mintable"
                         type="checkbox"
-                        className="form-checkbox mt-2 h-3 w-3 rounded"
-
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
+                        
                     />
-                    <label className="ml-2 mt-2 text-[#333333] ">Mintable</label>
+                    <label className="ml-[0.5rem] text-[#333333]">Mintable</label>
+                    </div>
+                    <Tool tooltipText="Privileged accounts will be able to create more supply" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                <div className="m-2 flex items-center">
+
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="Burnable"
                         type="checkbox"
-                        className="form-checkbox mt-2 h-3 w-3 text-indigo-600 rounded"
-
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
+                        
                     />
-                    <label className="ml-2 mt-2 text-[#333333]">Burnable</label>
+                    <label className="ml-[0.5rem] text-[#333333] ">Burnable</label>
+                    </div>
                 </div>
-                <div className="m-2 flex items-center">
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="Supply Tracking"
                         type="checkbox"
-                        className="form-checkbox mt-2 h-3 w-3 text-indigo-600 rounded"
-
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
+                        
                     />
-                    <label className="ml-2 mt-2 text-[#333333] ">Supply Tracking</label>
+                    <label className="ml-2 text-[#333333]">Supply Tracking</label>
+                    </div>
                 </div>
-                <div className="m-2 flex items-center">
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
-                        title="Pausable"
+                        title="Pauseable"
                         type="checkbox"
-                        className="form-checkbox mt-2 h-3 w-3 text-indigo-600 rounded"
-
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
+                        
                     />
-                    <label className="ml-2 mt-2 text-[#333333] ">Pausable</label>
+                    <label className="ml-[0.5rem] text-[#333333] ">Pauseable</label>
+                    </div>
                 </div>
-                <div className="m-2 mb-0 flex items-center">
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
-                        title="Updated URI"
+                        title="Updateable URI"
                         type="checkbox"
-                        className="form-checkbox mt-2 h-3 w-3 text-indigo-600 rounded"
-
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
+                        
                     />
-                    <label className="ml-2 mt-2 text-[#333333] ">Updated URI</label>
+                    <label className="ml-[0.5rem] text-[#333333] ">Updateable URI</label>
+                    </div>
                 </div>
+
 
             </div>
             <hr className="my-4"></hr>
-            <section>
-                <h1>
-                    <span className="text-[#818998] font-semibold text-xs">ACCESS CONTROL</span>
-                    <span className="ml-2">
-                        <input type="checkbox" disabled defaultChecked />
-                    </span>
-                </h1>
-            <div className="flex flex-col text-black ml-3 mt-1">
-                    <label className="inline-flex items-center  mt-2">
-                        <input 
-                        type="radio" 
-                        className="rounded-full h-3 w-3" 
-                        name="accessControl" />
-
-                        <span className="ml-2 text-black">Ownable</span>
-
-                    </label>
-                    <label className="inline-flex items-center mt-2 mr-4">
-                        <input 
-                        type="radio" 
-                        className="rounded-full h-3 w-3" 
-                        name="accessControl" />
-
-                        <span className="ml-2 text-black">Roles</span>
-
-                    </label>
-                    <label className="inline-flex mt-2 items-center">
-                        <input 
-                        type="radio" 
-                        className="rounded-full h-3 w-3" 
-                        name="accessControl" />
-
-                        <span className="ml-2 text-black">Managed</span>
-                    </label>
+            <div>
+                <div className="flex">
+                    <div className=" mt-0  flex items-center">
+                    <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">ACCESS CONTROL</label>
+                    <input
+                        title="Ownable"
+                        type="checkbox"
+                        className="form-checkbox h-3 w-3 rounded"
+                        
+                    />
+                    </div>
+            
                 </div>
-            </section>
-
-
+                <div className="m-[0.5rem]  flex items-center justify-between">
+                    <div className="flex items-center">
+                    <input
+                        title="Ownable"
+                        type="radio"
+                        className="form-checkbox h-3 w-3"
+                        
+                    />
+                    <label className="ml-2 text-[#333333] ">Ownable</label>
+                    </div>
+                    
+                </div>
+                <div className="m-[0.5rem]  flex items-center justify-between">
+                    <div className="  flex items-center">
+                    <input
+                        title="Roles"
+                        type="radio"
+                        className="radio h-3 w-3 "
+                        
+                    />
+                    <label className="ml-2 text-[#333333] ">Roles</label>
+                    </div>
+                    
+                </div>
+                <div className=" flex items-center m-[0.5rem]  mb-0 justify-between">
+                    <div className=" flex items-center ">
+                    <input
+                        title="Managed"
+                        type="radio"
+                        className="form-checkbox h-3 w-3"
+                        
+                    />
+                    <label className="ml-2 text-[#333333] ">Managed</label>
+                    </div>
+                    
+                </div>
+                
+            </div>
             <hr className="my-4" />
-            <section>
-                <h1 className="mt-2">
-                    <span className="text-[#818998] font-semibold text-xs">UPGRADEABILTY</span>
-                    <span className="ml-2">
-                        <input type="checkbox" />
-                    </span>
-                </h1>
-                <div className="flex flex-col text-black m-3 gap-3">
-                <label className="inline-flex items-center mt-2 mr-4">
-                        <input 
-                        type="radio" 
-                        className="rounded-full h-3 w-3" 
-                        name="accessControl" />
-
-                        <span className="ml-2 text-black">Transparent</span>
-
-                    </label>
-                    <label className="inline-flex mt-2 items-center">
-                        <input 
-                        type="radio" 
-                        className="rounded-full h-3 w-3" 
-                        name="accessControl" />
-
-                        <span className="ml-2 text-black">UUPS</span>
-                    </label>
+            <div>
+                <div className=" flex">
+                    <div className=" flex items-center">
+                    <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">UPGRADEABILITY</label>
+                    <input
+                        title="upgradability"
+                        type="checkbox"
+                        className="form-checkbox h-3 w-3 rounded"
+                        
+                    />
+                    </div>
                 </div>
-            </section>
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div  className="flex items-center">
+                    <input
+                        title="transparent"
+                        type="radio"
+                        className="form-checkbox h-3 w-3"
+                        
+                    />
+                    <label className="ml-2 text-[#333333] ">Transparent</label>
+                    </div>
+                   
+                </div>
+                <div className="m-[0.5rem] mb-0 flex items-center justify-between">
+                    <div className=" flex items-center">
+                    <input
+                        title="uups"
+                        type="radio"
+                        className="radio h-3 w-3"
+                        
+                    />
+                    <label className="ml-2 text-[#333333] ">UUPS</label>
+                    </div>
+                   
+                </div>
+                
+            </div>
             <hr className="my-4" />
             <div>
                 <h1 className="text-[#818998] font-semibold text-xs ">INFO</h1>
