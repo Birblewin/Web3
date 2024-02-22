@@ -21,7 +21,7 @@ const ERC20 = ()=>{
                     </div>
                 </div>
                 <div className="flex flex-col p-[0.5rem]">
-                    <label htmlFor="uri" className="text-[#333333] text-[0.875rem]">
+                    <label htmlFor="uri" className="text-black text-[0.875rem]">
                         Premint
                     </label>
                     <input  id="uri" type="text" placeholder="0" className="border border-1 border-[#333333] rounded-[6px] p-1  text-black"/>
