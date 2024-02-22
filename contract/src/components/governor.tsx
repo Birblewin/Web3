@@ -55,6 +55,7 @@ const Governor = ()=>{
                 </div>
                 <div className="m-[0.5rem] flex items-center">
                     <input
+                    title="updatable"
                         type="checkbox"
                         className=" h-3 w-3 text-indigo-600 rounded"
                         
@@ -63,6 +64,7 @@ const Governor = ()=>{
                 </div>
                 <div className="m-[0.5rem] flex items-center">
                     <input
+                    title="storage"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 text-indigo-600 rounded"
                         
@@ -77,6 +79,7 @@ const Governor = ()=>{
                 <div className="m-[0.5rem]  flex items-center">
                     
                     <input
+                    title="ERC20Votes"
                         type="radio"
                         className="form-checkbox h-3 w-3"
                         
@@ -86,6 +89,7 @@ const Governor = ()=>{
                 <div className="m-[0.5rem]  flex items-center">
                     
                     <input
+                    title="ERC721Votes"
                         type="radio"
                         className="radio h-3 w-3 "
                         
@@ -99,6 +103,7 @@ const Governor = ()=>{
                 <div className=" flex items-center">
                     <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">TIMELOCK</label>
                     <input
+                    title="timelock"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 rounded"
                         
@@ -107,6 +112,7 @@ const Governor = ()=>{
                 <div className="m-[0.5rem]  flex items-center">
                     
                     <input
+                    title="timelockController"
                         type="radio"
                         className="form-checkbox h-3 w-3"
                         
@@ -116,6 +122,7 @@ const Governor = ()=>{
                 <div className="m-[0.5rem]  flex items-center">
                     
                     <input
+                    title="compound"
                         type="radio"
                         className="radio h-3 w-3 "
                         
@@ -129,6 +136,7 @@ const Governor = ()=>{
                 <div className=" flex items-center">
                     <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">UPGRADEABILITY</label>
                     <input
+                    title="upgradeability"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 rounded"
                         
@@ -137,6 +145,7 @@ const Governor = ()=>{
                 <div className="m-[0.5rem] flex items-center">
                     
                     <input
+                    title="transparent"
                         type="radio"
                         className="form-checkbox h-3 w-3"
                         
@@ -146,6 +155,7 @@ const Governor = ()=>{
                 <div className="m-[0.5rem] mb-0 flex items-center">
                     
                     <input
+                    title="uups"
                         type="radio"
                         className="radio h-3 w-3"
                         
