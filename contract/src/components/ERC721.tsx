@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Tool from "./tool";
 
 
 const ERC721 = ()=>{
@@ -38,21 +39,25 @@ const ERC721 = ()=>{
             <hr className="my-4"></hr>
             <div>
                 <h1 className="text-[#818998] font-semibold text-xs">FEATURES</h1>
-                <div className="m-[0.5rem] flex items-center">
-                    <input
-                        title="Mintable"
-                        type="checkbox"
-                        className="form-checkbox h-3 w-3 rounded"
-                        checked={isAutoIncrementIds}
-                        onChange={handleAutoIncrementIdsChange}
-                        onClick={() => setIsAutoIncrementIds(!isAutoIncrementIds)}
-                        
-                    />
-                    <label className="ml-[0.5rem] text-[#333333] ">Mintable</label>
-                </div>
-                <div className="m-[0.5rem] flex items-center">
+                <div className="justify-between m-[0.5rem] flex items-center">
+                    <div className=" flex items-center ">
+                        <input
+                            title="Mintable"
+                            type="checkbox"
+                            className="form-checkbox h-3 w-3 rounded"
+                            checked={isAutoIncrementIds}
+                            onChange={handleAutoIncrementIdsChange}
+                            onClick={() => setIsAutoIncrementIds(!isAutoIncrementIds)}
+                            
+                        />
+                        <label className="ml-[0.5rem] text-[#333333] ">Mintable</label>
+                    </div>
                     
-                    <label className="ml-[0.5rem] text-[#333333] flex items-center">
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
+                </div>
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className="flex items-center">
+                    <label className=" text-[#333333] flex items-center">
                         <span className="text-[#d8dbe2]">└</span>
                         <input
                         title="Auto increment Ids"
@@ -63,8 +68,11 @@ const ERC721 = ()=>{
                         
                     />
                         Auto increment Ids</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                <div className="m-[0.5rem] flex items-center">
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="Burnable"
                         type="checkbox"
@@ -72,8 +80,11 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-[0.5rem] text-[#333333]">Burnable</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                <div className="m-[0.5rem] flex items-center">
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="Pauseable"
                         type="checkbox"
@@ -81,8 +92,11 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-[0.5rem] text-[#333333] ">Pauseable</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                <div className="m-[0.5rem] flex items-center">
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="Votes"
                         type="checkbox"
@@ -90,8 +104,11 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-[0.5rem] text-[#333333] ">Votes</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                <div className="m-[0.5rem] mb-0 flex items-center">
+                <div className="m-[0.5rem] mb-0 flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="enumerable"
                         type="checkbox"
@@ -99,8 +116,11 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-[0.5rem] text-[#333333] ">Enumerable</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                <div className="m-[0.5rem] mb-0 flex items-center">
+                <div className="m-[0.5rem] mb-0 flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="URI Storage"
                         type="checkbox"
@@ -108,12 +128,15 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-[0.5rem] text-[#333333] ">URI Storage</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
                 
             </div>
             <hr className="my-4"></hr>
             <div>
-                <div className=" mt-0  flex items-center">
+                <div className=" mt-0  flex items-center justify-between px-2">
+                    <div className=" mt-0  flex items-center">
                     <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">ACCESS CONTROL</label>
                     <input
                         title="Ownable"
@@ -121,9 +144,12 @@ const ERC721 = ()=>{
                         className="form-checkbox h-3 w-3 rounded"
                         
                     />
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
+            
                 </div>
-                <div className="m-[0.5rem]  flex items-center">
-                    
+                <div className="m-[0.5rem]  flex items-center justify-between">
+                    <div className="flex items-center">
                     <input
                         title="Ownable"
                         type="radio"
@@ -131,9 +157,12 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-2 text-[#333333] ">Ownable</label>
+                    </div>
+                     <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
+                   
                 </div>
-                <div className="m-[0.5rem]  flex items-center">
-                    
+                <div className="m-[0.5rem]  flex items-center justify-between">
+                    <div className="  flex items-center">
                     <input
                         title="Roles"
                         type="radio"
@@ -141,9 +170,12 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-2 text-[#333333] ">Roles</label>
-                </div>
-                <div className=" flex items-center m-[0.5rem]  mb-0">
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                     
+                </div>
+                <div className=" flex items-center m-[0.5rem]  mb-0 justify-between">
+                    <div className=" flex items-center ">
                     <input
                         title="Managed"
                         type="radio"
@@ -151,12 +183,16 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-2 text-[#333333] ">Managed</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
+                    
                 </div>
                 
             </div>
             <hr className="my-4"></hr>
             <div>
-                <div className=" flex items-center">
+                <div className=" flex items-center justify-between px-2">
+                    <div className=" flex items-center">
                     <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">UPGRADEABILITY</label>
                     <input
                         title="upgradability"
@@ -164,9 +200,11 @@ const ERC721 = ()=>{
                         className="form-checkbox h-3 w-3 rounded"
                         
                     />
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                <div className="m-[0.5rem] flex items-center">
-                    
+                <div className="m-[0.5rem] flex items-center justify-between">
+                    <div  className="flex items-center">
                     <input
                         title="transparent"
                         type="radio"
@@ -174,9 +212,12 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-2 text-[#333333] ">Transparent</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
+                   
                 </div>
-                <div className="m-[0.5rem] mb-0 flex items-center">
-                    
+                <div className="m-[0.5rem] mb-0 flex items-center justify-between">
+                    <div className=" flex items-center">
                     <input
                         title="uups"
                         type="radio"
@@ -184,17 +225,23 @@ const ERC721 = ()=>{
                         
                     />
                     <label className="ml-2 text-[#333333] ">UUPS</label>
+                    </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
+                   
                 </div>
                 
             </div>
             <hr className="my-4"></hr>
-            <div>
+            <div className="px-2">
                 <h1 className="text-[#818998] font-semibold text-xs ">INFO</h1>
                 <div className="flex flex-col mt-[0.75rem]">
-                   
-                    <label htmlFor="Security Contact" className="text-[#333333] text-sm">
+                   <div className="flex items-center justify-between">
+                   <label htmlFor="Security Contact" className="text-[#333333] text-sm">
                         Security Contact
                     </label>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
+                   </div>
+                   
                     <input  id="Security Contact" type="text" placeholder="security@example.com" className="border border-1 border-[#333333] rounded-[6px] p-1  text-black"/>
                 </div>
                 <div className="flex flex-col mt-[0.75rem]">

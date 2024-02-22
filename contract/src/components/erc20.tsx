@@ -8,7 +8,7 @@ const ERC20 = ()=>{
                 <h1 className="text-[#818998] font-semibold text-xs">SETTINGS</h1>
                 <div className="flex flex-row">
                     <div className="flex flex-col w-[60%] p-[0.5rem]">
-                        <label htmlFor="name" className="text-[#333333] text-[0.875rem]  text-black">
+                        <label htmlFor="name" className="text-[#333333] text-[0.875rem]  ">
                             Name
                         </label>
                         <input  id="name" type="text" placeholder="My Token" className="border border-1 border-[#333333] rounded-[6px] p-1"/>
@@ -33,6 +33,7 @@ const ERC20 = ()=>{
                 <div className="m-[0.5rem] flex items-center place-content-between">
                     <div className="flex items-center">
                         <input
+                        title="mintable"
                             type="checkbox"
                             className="form-checkbox h-3 w-3 rounded"
                             
@@ -43,6 +44,7 @@ const ERC20 = ()=>{
                 </div>
                 <div className="m-[0.5rem] flex items-center">
                     <input
+                    title="burnable"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 text-indigo-600 rounded"
                         
@@ -51,6 +53,7 @@ const ERC20 = ()=>{
                 </div>
                 <div className="m-[0.5rem] flex items-center">
                     <input
+                    title="pausable"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 text-indigo-600 rounded"
                         
@@ -59,6 +62,7 @@ const ERC20 = ()=>{
                 </div>
                 <div className="m-[0.5rem] flex items-center">
                     <input
+                    title="votes"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 text-indigo-600 rounded"
                         
@@ -67,6 +71,7 @@ const ERC20 = ()=>{
                 </div>
                 <div className="m-[0.5rem] mb-0 flex items-center">
                     <input
+                    title="flash minting"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 text-indigo-600 rounded"
                         
@@ -80,6 +85,7 @@ const ERC20 = ()=>{
                 <div className=" mt-0  flex items-center">
                     <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">ACCESS CONTROL</label>
                     <input
+                    title="access control"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 rounded"
                         
@@ -88,6 +94,7 @@ const ERC20 = ()=>{
                 <div className="m-[0.5rem]  flex items-center">
                     
                     <input
+                    title="ownable"
                         type="radio"
                         className="form-checkbox h-3 w-3"
                         
@@ -97,6 +104,7 @@ const ERC20 = ()=>{
                 <div className="m-[0.5rem]  flex items-center">
                     
                     <input
+                    title="roles"
                         type="radio"
                         className="radio h-3 w-3 "
                         
@@ -106,6 +114,7 @@ const ERC20 = ()=>{
                 <div className=" flex items-center m-[0.5rem]  mb-0">
                     
                     <input
+                    title="mintable"
                         type="radio"
                         className="form-checkbox h-3 w-3"
                         
@@ -119,6 +128,7 @@ const ERC20 = ()=>{
                 <div className=" flex items-center">
                     <label className="text-[#818998] font-semibold text-xs mr-[0.5rem]">UPGRADEABILITY</label>
                     <input
+                    title="upgradeable"
                         type="checkbox"
                         className="form-checkbox h-3 w-3 rounded"
                         
@@ -127,6 +137,7 @@ const ERC20 = ()=>{
                 <div className="m-[0.5rem] flex items-center">
                     
                     <input
+                    title="transparent"
                         type="radio"
                         className="form-checkbox h-3 w-3"
                         
@@ -136,6 +147,7 @@ const ERC20 = ()=>{
                 <div className="m-[0.5rem] mb-0 flex items-center">
                     
                     <input
+                    title="uups"
                         type="radio"
                         className="radio h-3 w-3"
                         
