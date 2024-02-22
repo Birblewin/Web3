@@ -6,13 +6,14 @@ import {
     TooltipProvider,
     TooltipTrigger,
   } from "@/components/ui/tooltip"
+import Image from "next/image";
   
 
 const Tool: React.FC<{link?:string; tooltipText: string; linktext?: string }> = ({ tooltipText , link, linktext}) => {
   return (
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger><img src={'/svg.svg'} alt='svg' className="w-3 h-3" /></TooltipTrigger>
+        <TooltipTrigger><Image src={'/svg.svg'} alt='svg' width={20} height={20} /></TooltipTrigger>
         <TooltipContent>
           <p>{tooltipText}</p>
           {link &&
