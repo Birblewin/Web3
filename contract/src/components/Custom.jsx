@@ -24,11 +24,11 @@ export default function Custom() {
                     <input
                         title="Pausable"
                         type="checkbox"
-                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
-                        
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"                        
                     />
                     <label className="ml-[0.5rem] text-[#333333]">Pausable</label>
                     </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
 
                 <div className="m-[0.5rem] flex items-center justify-between">
@@ -36,11 +36,11 @@ export default function Custom() {
                     <input
                         title="Upgradeable"
                         type="checkbox"
-                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"
-                        
+                        className="form-checkbox h-3 w-3 text-indigo-600 rounded"                
                     />
                     <label className="ml-[0.5rem] text-[#333333] ">Upgradeable</label>
                     </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
             </div>
             <hr className="my-4"></hr>
@@ -51,8 +51,7 @@ export default function Custom() {
                     <input
                         title="Ownable"
                         type="checkbox"
-                        className="form-checkbox h-3 w-3 rounded"
-                        
+                        className="form-checkbox h-3 w-3 rounded"     
                     />
                     </div>
             
@@ -62,23 +61,22 @@ export default function Custom() {
                     <input
                         title="Ownable"
                         type="radio"
-                        className="form-checkbox h-3 w-3"
-                        
+                        className="form-checkbox h-3 w-3"    
                     />
                     <label className="ml-2 text-[#333333] ">Ownable</label>
                     </div>
-                    
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
                 <div className="m-[0.5rem]  flex items-center justify-between">
                     <div className="  flex items-center">
                     <input
                         title="Roles"
                         type="radio"
-                        className="radio h-3 w-3 "
-                        
+                        className="radio h-3 w-3 " 
                     />
                     <label className="ml-2 text-[#333333] ">Roles</label>
                     </div>
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
                 <div className=" flex items-center m-[0.5rem]  mb-0 justify-between">
                     <div className=" flex items-center ">
@@ -86,11 +84,10 @@ export default function Custom() {
                         title="Managed"
                         type="radio"
                         className="form-checkbox h-3 w-3"
-                        
                     />
                     <label className="ml-2 text-[#333333] ">Managed</label>
                     </div>
-                    
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
             </div>
             <hr className="my-4" />
@@ -101,8 +98,7 @@ export default function Custom() {
                     <input
                         title="upgradability"
                         type="checkbox"
-                        className="form-checkbox h-3 w-3 rounded"
-                        
+                        className="form-checkbox h-3 w-3 rounded"   
                     />
                     </div>
                 </div>
@@ -112,25 +108,22 @@ export default function Custom() {
                         title="transparent"
                         type="radio"
                         className="form-checkbox h-3 w-3"
-                        
                     />
                     <label className="ml-2 text-[#333333] ">Transparent</label>
                     </div>
-                   
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>  
                 </div>
                 <div className="m-[0.5rem] mb-0 flex items-center justify-between">
                     <div className=" flex items-center">
                     <input
                         title="uups"
                         type="radio"
-                        className="radio h-3 w-3"
-                        
+                        className="radio h-3 w-3"       
                     />
                     <label className="ml-2 text-[#333333] ">UUPS</label>
                     </div>
-                   
+                    <Tool tooltipText="Tooltip Text Here" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
-                
             </div>
             <hr className="my-4" />
             <div>
