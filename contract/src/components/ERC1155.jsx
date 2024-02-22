@@ -37,7 +37,6 @@ export default function ERC1155() {
                     />
                     <label className="ml-[0.5rem] text-[#333333]">Mintable</label>
                     </div>
-                    <Tool tooltipText="Privileged accounts will be able to create more supply" link='https://www.birbleai.com/' linktext='Read more'/>
                 </div>
 
                 <div className="m-[0.5rem] flex items-center justify-between">
